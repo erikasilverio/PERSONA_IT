@@ -24,6 +24,7 @@
         background-color:azure ;
         color: black;
         font-family: 'Old Standard TT', serif;
+        
     }
 
 
@@ -148,5 +149,5 @@
         width:auto ;
         height: 60px;
         text-align:center;
-        margin-left: 20px;
+        margin-left: 0px;
     }
