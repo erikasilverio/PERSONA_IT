@@ -3,48 +3,103 @@
 
 
 
-    *{
-        
+    *{        
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
         
+              
+             
     }
+
+    
+        
+
 
     header{
-        background-image: url(violeta.png);
-        text-align: center;
+        display: flex;
+        
         width: 100%;
-        padding: auto;
+        align-items: center;
+        justify-content:space-between ;
+        padding: 2rem;
+                     
+        
+    }
+    
+
+    .nav-list{
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+    
     }
 
+    .nav-list li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .abrir-menu{
+        display: none;
+    }
+    .cerrar-menu{
+        display: none;
+    }
+
+    @media screen and (max-width: 300px) {
+        .abrir-menu,
+        .cerrar-menu{
+        display: block;
+        }
+
+      
+
+        .nav{
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;            
+            align-items: end;
+            gap:1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(138, 90, 182);
+            padding: 2rem;
+            box-shadow:  0 0 0 100vmax rgba(110, 23, 138, 0.749) ;
+            
+
+        }
+
+        .nav.visible{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .nav-list{
+            flex-direction: column;  
+            align-items: end;  
+        }
+
+        .nav-list li a {
+            color: aliceblue;
+            }
+    }
 
     body {
+        display: grid;
         background-color:azure ;
         color: black;
         font-family: 'Old Standard TT', serif;
         
-    }
-
-
-    .encabezado-img{
-        background-image: url('violeta.png');
         
-        height: 500px;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-
     }
 
-    .encabezado-img h1{
-        font-size: 50px;
 
-    }
+        
+   
 
     .container{
         max-width: 1080px;
@@ -116,19 +171,10 @@
     }
 
 
-    
-
-    button{
-       
-        background-color: #d9a65e;
-        border-bottom: black;
-        min-width: 20%;
-
-    }
 
     
 
-    .box {
+    .box{
         width: 800px;
         height: 120px;
         background-color: #d9a65e;
@@ -142,6 +188,14 @@
         margin-bottom: 80px;
     }
 
+
+    .submit{
+       
+        background-color: #d9a65e;
+        border-bottom: black;
+        min-width: 20%;
+
+    }
     
 
     footer{
