@@ -3,113 +3,102 @@
 
 
 
-    *{        
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-              
-             
-    }
-
     
-        
+* {
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+}
 
-
-    header{
-        display: flex;
-        
-        width: 100%;
-        align-items: center;
-        justify-content:space-between ;
-        padding: 2rem;
-                     
-        
-    }
-    
-
-    .nav-list{
-        list-style-type: none;
-        display: flex;
-        gap: 1rem;
-    
-    }
-
-    .nav-list li a{
-        text-decoration: none;
-        color: black;
-    }
-
-    .abrir-menu{
-        display: none;
-    }
-    .cerrar-menu{
-        display: none;
-    }
-
-    @media screen and (max-width: 300px) {
-        .abrir-menu,
-        .cerrar-menu{
-        display: block;
-        }
-
-      
-
-        .nav{
-            opacity: 0;
-            visibility: hidden;
-            display: flex;
-            flex-direction: column;            
-            align-items: end;
-            gap:1rem;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgb(138, 90, 182);
-            padding: 2rem;
-            box-shadow:  0 0 0 100vmax rgba(110, 23, 138, 0.749) ;
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Old Standard TT', serif;
+    width: 100vw;
+    flex-direction: column;
+    background-color:azure ;  
             
-
-        }
-
-        .nav.visible{
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .nav-list{
-            flex-direction: column;  
-            align-items: end;  
-        }
-
-        .nav-list li a {
-            color: aliceblue;
-            }
-    }
-
-    body {
-        display: grid;
-        background-color:azure ;
-        color: black;
-        font-family: 'Old Standard TT', serif;
-        
-        
-    }
+}
 
 
-        
-   
 
-    .container{
-        max-width: 1080px;
-        margin: 0 auto;
+header {
+    box-sizing: border-box;
+     height: calc(100vh - 150px);        
+     background: no-repeat center/cover url(assets/violeta.png);  /* aca selecione la imagem la deje centrada
+     y agregue el cover que deja la imagem al tamaño de la pantalla.*/
+     align-items: center;
+     justify-content: space-between;
+
+  
+}
+ 
+.header-content{    
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+}
+
+.header-content h1{
+        margin-bottom: 10px ;  /* aca centralizando el texto */
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+ 
+#menu{
+    display: flex;
+    list-style: none; /* ordenando el menu */
+    gap: .5rem;
+}
+
+
+#menu{
+    display: block;
+    padding: .5rem;
+}
+
+
+.abrir-menu{
+    display: none;
+}
+
+
+ /* NO LOGRE EL MENU HAMBURGUESA */
+
+ /* NO LOGRE EL MENU HAMBURGUESA */
+
+ /* NO LOGRE EL MENU HAMBURGUESA */
+
+@media (max-width: 600px){  
+    .abrir-menu{
+    display: block;
+}
+    .menu{
+    
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #d9a65e;
+    display: block;
+    height: 100vh;
+}
+    #nav-active .menu{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        
     }
+}
 
+
+
+    /* INFORMACOES DA PAGINA */
 
 
 
@@ -118,9 +107,6 @@
         color: blueviolet;
         
     }
-
-
-
     .bloco1{
         width: 960px;
         margin: auto;
@@ -142,6 +128,7 @@
         width: 300px;
         margin-top: 50px;
         margin-left: 40px;
+        color: black;
 
     }
 
@@ -167,6 +154,7 @@
         width: 300px;
         margin-top: 50px;
         margin-right: 40px;
+        color: black;
 
     }
 
