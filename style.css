@@ -27,8 +27,7 @@ header {
      height: calc(100vh - 150px);        
      background: no-repeat center/cover url(assets/violeta.png);  /* aca selecione la imagem la deje centrada
      y agregue el cover que deja la imagem al tamaño de la pantalla.*/
-     align-items: center;
-     justify-content: space-between;
+     color: white;
 
   
 }
@@ -45,12 +44,12 @@ header {
 
 a{
     color: black;
-    text-decoration: none;
+    text-decoration: none;  /* color principal del menu */
 
 }
 
 a:hover{
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .05); /* sombreado cuando es selecionada la apcion del menu*/
 }
  
 #menu{
@@ -76,6 +75,7 @@ a:hover{
  /* NO LOGRE EL MENU HAMBURGUESA */
 
  /* NO LOGRE EL MENU HAMBURGUESA */
+ 
 
 @media (max-width: 600px){  
     .abrir-menu{
